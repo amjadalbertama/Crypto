@@ -1,0 +1,60 @@
+<!-- <app-header></app-header> -->
+<main id="main">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title d-flex justify-content-between align-items-center">
+            <h2>Verification Account</h2>
+            <a routerLink="/home" class="btn btn-secondary ml-auto">Back</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch" >
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="form1">
+                <h3>Document Verification</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="ktp">Upload Card Identity</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="ktpName" readonly>
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary btn_choose" type="button" (click)="selectKtpFile()">Choose File</button>
+                                  <input type="file" class="d-none" id="ktpFile" (change)="onFileSelected($event)">
+                                </div>
+                            </div>                         
+                        </div>                          
+                        <div class="form-group">
+                            <label for="kk">Upload Card Family</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="kkName" readonly>
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary btn_choose" type="button" (click)="selectKkFile()">Choose File</button>
+                                  <input type="file" class="d-none" id="kkFile" (change)="onFileKkSelected($event)">
+                                </div>
+                            </div>                         
+                        </div>     
+                        <div class="form-group">
+                            <label for="license">Upload Card License</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="licenseName" readonly>
+                                <div class="input-group-append">
+                                  <button class="btn btn-outline-secondary btn_choose" type="button" (click)="selectLicenseFile()">Choose File</button>
+                                  <input type="file" class="d-none" id="licenseFile" (change)="onFileLicenseSelected($event)">
+                                </div>
+                            </div>                         
+                        </div>     
+                    </div>
+                    <div class="col-md-6">
+                        <h3>Information</h3>
+                    </div>
+                </div>
+                <div class="text-center"><button type="submit">Varification</button></div>
+              </form>
+            </div>
+          </div>
+          
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+  <app-footer></app-footer>

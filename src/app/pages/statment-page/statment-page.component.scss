@@ -1,0 +1,365 @@
+
+  .username {
+    font-size: 14px;
+    color: #fff;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  
+  .bottom-left {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 999;
+  }
+
+  .step-item {
+    width: 40%;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #3dc9b1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    max-width: 500px;
+  }
+  
+  .step-item .step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    font-size: 32px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .step-item .step-text {
+    font-size: 18px;
+  }
+  
+  .step-divider {
+    width: 1px;
+    height: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .page-statement {
+    width: 32%;
+    padding: 10px;
+    background-color:  rgba(214, 214, 214, 0.9);
+    text-align: center;
+    cursor: pointer;
+    align-items: center;
+    flex-grow: 1;
+    color: #000000;
+  }
+  .page-statement-text {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .page-statement.active {
+    background-color: #47b2e4;
+    color: #fff;
+  }
+
+.page-statement:hover,
+.page-statement:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.scrollable {
+  overflow: auto;
+  max-height: 600px;
+  background-color:  rgba(214, 214, 214, 0.9);
+  box-shadow: 0 4px 4px -2px rgba(151, 149, 149, 0.4), 0 -4px 4px -2px rgba(0, 0, 0, 0.4);
+  border: 3px solid #ccc;
+  border-left: none;
+  border-right: none;
+  padding: 10px;
+}
+
+.rectangle {
+  position: relative;
+  width: 98%;
+  height: 50px;
+  background-image: linear-gradient(to right,  #47b2e4 30%, #ffffff 30%);
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rectangle-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 70px;
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+.message-error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.table-rect {
+  position: relative;
+  width: 98%;
+  height: 70px;
+  border-radius: 5px;
+  // background-color: #47b2e4;
+  // background-image: linear-gradient(to right,  #47b2e4 30%, #ffffff 30%); 
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.transaction-date > span {
+  font-weight: bold;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.transaction-date {
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-size: 18px;
+  margin-left: 20px;
+  // background-color: #31a9e1;
+}
+
+.balance-info {
+  display: flex;
+  margin: auto;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
+}
+
+.balance-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 60px;
+  margin-left: 140px;
+}
+
+.balance-label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.balance-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.button-filter:hover,
+.button-filter:focus:hover {
+  color: #fff;
+  background: #31a9e1;
+}
+
+.button-filter.active {
+  background-color: #47b2e4;
+  color: #fff;
+}
+
+/* Small devices (phones, 320px and up) */
+@media only screen and (min-width: 320px) {
+  .rectangle {
+    flex-direction: column;
+    height: auto;
+    background-image: linear-gradient(to bottom, #47b2e4 50%, #ffffff 50%);
+  }
+  
+  .transaction-date {
+    font-size: 16px;
+  }
+  
+  .balance-item {
+    margin: 10px;
+  }
+
+  .total-profit {
+    margin-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-filter {
+    background-color: #ffffff;
+    margin: 0 20px;
+    border-radius: 50px;
+    color: #47b2e4;
+    font-size: 16px;
+    border: 2px solid #47b2e4;
+    padding: 8px 20px;
+  }
+
+  .title-coin {
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .coin-profit {
+    margin-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .rectangle {
+    flex-direction: row;
+    height: 100px;
+    background-image: linear-gradient(to right,  #47b2e4 30%, #ffffff 30%);
+  }
+  
+  .transaction-date {
+    font-size: 18px;
+  }
+  
+  .balance-item {
+    margin: 0 50px;
+  }
+
+  .total-profit {
+    position: absolute;
+    margin-left: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-filter {
+    background-color: #ffffff;
+    margin: 0 50px;
+    border-radius: 50px;
+    color: #47b2e4;
+    font-size: 16px;
+    border: 2px solid #47b2e4;
+    padding: 8px 20px;
+  }
+
+  .title-coin {
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-size: 18px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .coin-profit {
+    position: absolute;
+    left: calc(100% - 250px);
+    font-weight: bold;
+    color: #000000;
+  }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .rectangle {
+    width: 98%;
+    background-image: linear-gradient(to right,  #47b2e4 30%, #ffffff 30%);
+  }
+  
+  .balance-item {
+    margin: 0 80px 0 120px;
+  }
+
+  .total-profit {
+    left: calc(100% - 500px);
+    margin-right: -200px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .button-filter {
+    background-color: #ffffff;
+    margin: 0 100px;
+    border-radius: 50px;
+    color: #47b2e4;
+    font-size: 16px;
+    border: 2px solid #47b2e4;
+    padding: 8px 20px;
+  }
+
+  .title-coin {
+    color: #ffffff;
+    margin-bottom: 0px;
+    font-size: 18px;
+    margin-left: 20px;
+    padding-right: 40px;
+    font-weight: bold;
+  }
+
+  .coin-profit {
+    position: absolute;
+    left: calc(100% - 500px);
+    font-weight: bold;
+    color: #000000;
+  }
+}

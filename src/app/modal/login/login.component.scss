@@ -1,0 +1,27 @@
+#myModal .modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px; /* ubah sesuai kebutuhan */
+    max-height: 80vh; /* ubah sesuai kebutuhan */
+  }
+
+.modal-header{
+    background-color:#37517e;
+}
+
+.modal-title{
+    color:#ffffff;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.close-btn-color{
+    background-color:#ffffff;
+}
+
+.submit-btn-color{
+    background-color:#47b2e4;
+    color:#ffffff;
+}
+  

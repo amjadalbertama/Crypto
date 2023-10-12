@@ -1,0 +1,32 @@
+.form-check-input[type=checkbox] {
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: 10px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #fff;
+  }
+  
+  .form-check-input[type=checkbox]:checked {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .form-check-input[type=checkbox]:hover:not(:disabled) {
+    cursor: pointer;
+  }
+  
+  .form-check-input[type=checkbox]:disabled {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  .form-check-input[type=checkbox]:disabled:checked {
+    background-color: rgba(0, 123, 255, 0.5);
+  }
+  
+  .submit-btn-color{
+    background-color:#47b2e4;
+    color:#ffffff;
+ }

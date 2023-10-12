@@ -1,0 +1,73 @@
+<!-- <app-header></app-header> -->
+<main id="main">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title d-flex justify-content-between align-items-center">
+            <h2>Register</h2>
+            <a routerLink="/home" class="btn btn-secondary ml-auto">Back</a>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch" >
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form" id="form1">
+                <h3>Create Personal Account</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" name="email" #email [ngClass]="{ 'is-invalid': emailErrors }" >
+                          <div *ngIf="emailErrors" class="invalid-feedback">
+                            {{ emailErrors }}
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="phone">Phone Number</label>
+                          <input type="number" class="form-control" name="phone" #phone [ngClass]="{ 'is-invalid': phoneErrors }">
+                          <div *ngIf="phoneErrors" class="invalid-feedback">
+                            {{ phoneErrors }}
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="referral">Referral Code</label>
+                          <input type="text" class="form-control" name="referral" #referral>
+                        </div>
+                        <div class="form-group">
+                            <div class="form-check form-check-inline">
+                                <input type="checkbox" class="form-check-input" id="terms" >
+                                <label class="form-check-label" for="terms">I agree to the <a href="#">terms and conditions</a></label>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="name">name</label>
+                            <input type="name" class="form-control" name="name" #name [ngClass]="{ 'is-invalid': nameErrors }">
+                            <div *ngIf="nameErrors" class="invalid-feedback">
+                              {{ nameErrors }}
+                            </div>
+                          </div>
+                        <div class="form-group">
+                          <label for="password">Password</label>
+                          <input type="password" name="password" class="form-control" #password [ngClass]="{ 'is-invalid': passwordErrors }">
+                          <div *ngIf="passwordErrors" class="invalid-feedback">
+                            {{ passwordErrors }}
+                          </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="confirm_password">Confirm Password</label>
+                            <input type="password" name="confirm_password" class="form-control" #confirm_password [ngClass]="{ 'is-invalid': confirmErrors }" >
+                            <div *ngIf="confirmErrors" class="invalid-feedback">
+                              {{ confirmErrors }}
+                            </div>
+                          </div>
+                    </div>
+                </div>
+                <!-- <div class="text-center"><button type="submit">Register</button></div> -->
+                <div class="text-center"> <a type="submit" class="btn submit-btn-color" (click)="register()">Register</a></div>
+              </form>
+            </div>
+          </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+  <app-footer></app-footer>

@@ -1,0 +1,224 @@
+<app-header></app-header>
+<main id="main">
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title d-flex justify-content-between align-items-center">
+        </div>
+
+        <div class="d-flex justify-content-center">
+            <div class="progress-nav d-flex justify-content-between align-items-center">
+              <div class="step-item" id="step1">
+                <div class="step-number">4.5679</div>
+                <div class="step-text">Today's profit(USDT)</div>
+              </div>
+              <div class="step-divider"></div>
+              <div class="step-item" id="step2">
+                <div class="step-number">456.788</div>
+                <div class="step-text">Total profit(USDT)</div>
+              </div>
+            </div>
+        </div>
+       <br>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="page-statement" [class.active]="isTodayProfitActive" (click)="showPage1()">
+              <div class="page-statement-text">Today 's Profit</div>
+            </div>
+            <div class="page-statement" [class.active]="isTotalProfitActive" (click)="showPage2()">
+              <div class="page-statement-text">Total Profit</div>
+            </div>
+            <div class="page-statement" [class.active]="isCoinProfitActive" (click)="showPage3()">
+              <div class="page-statement-text">Coin Profit</div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-lg-12 mt-5 mt-lg-0 d-flex align-items-stretch" >
+              <div class="php-email-form" *ngIf="page1">
+                <div class="scrollable">
+                  <div class="rectangle">
+                    <div class="transaction-date">Transaction Time: <br>
+                      <span>2023-04-14 10:50:21</span>
+                    </div>
+                    <div class="balance-info">
+                      <div class="coins-info balance-item">
+                        <div class="balance-label">Coins</div>
+                        <div class="balance-value">1000</div>
+                      </div>
+                      <div class="profit-info balance-item">
+                        <div class="balance-label">Profit Amount</div>
+                        <div class="balance-value">500</div>
+                      </div>
+                      <div class="order-info balance-item">
+                        <div class="balance-label">Order No</div>
+                        <div class="balance-value">12345</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rectangle">
+                     <div class="transaction-date">Transaction Time: <br>
+                      <span>2023-04-14 10:50:21</span>
+                    </div>
+                    <div class="balance-info">
+                      <div class="coins-info balance-item">
+                        <div class="balance-label">Coins</div>
+                        <div class="balance-value">1000</div>
+                      </div>
+                      <div class="profit-info balance-item">
+                        <div class="balance-label">Profit Amount</div>
+                        <div class="balance-value">500</div>
+                      </div>
+                      <div class="order-info balance-item">
+                        <div class="balance-label">Order No</div>
+                        <div class="balance-value">12345</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rectangle">
+                     <div class="transaction-date">Transaction Time: <br>
+                      <span>2023-04-14 10:50:21</span>
+                    </div>
+                    <div class="balance-info">
+                      <div class="coins-info balance-item">
+                        <div class="balance-label">Coins</div>
+                        <div class="balance-value">1000</div>
+                      </div>
+                      <div class="profit-info balance-item">
+                        <div class="balance-label">Profit Amount</div>
+                        <div class="balance-value">500</div>
+                      </div>
+                      <div class="order-info balance-item">
+                        <div class="balance-label">Order No</div>
+                        <div class="balance-value">12345</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rectangle">
+                     <div class="transaction-date">Transaction Time: <br>
+                      <span>2023-04-14 10:50:21</span>
+                    </div>
+                    <div class="balance-info">
+                      <div class="coins-info balance-item">
+                        <div class="balance-label">Coins</div>
+                        <div class="balance-value">1000</div>
+                      </div>
+                      <div class="profit-info balance-item">
+                        <div class="balance-label">Profit Amount</div>
+                        <div class="balance-value">500</div>
+                      </div>
+                      <div class="order-info balance-item">
+                        <div class="balance-label">Order No</div>
+                        <div class="balance-value">12345</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rectangle">
+                     <div class="transaction-date">Transaction Time: <br>
+                      <span>2023-04-14 10:50:21</span>
+                    </div>
+                    <div class="balance-info">
+                      <div class="coins-info balance-item">
+                        <div class="balance-label">Coins</div>
+                        <div class="balance-value">1000</div>
+                      </div>
+                      <div class="profit-info balance-item">
+                        <div class="balance-label">Profit Amount</div>
+                        <div class="balance-value">500</div>
+                      </div>
+                      <div class="order-info balance-item">
+                        <div class="balance-label">Order No</div>
+                        <div class="balance-value">12345</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="rectangle">
+                     <div class="transaction-date">Transaction Time: <br>
+                      <span>2023-04-14 10:50:21</span>
+                    </div>
+                    <div class="balance-info">
+                      <div class="coins-info balance-item">
+                        <div class="balance-label">Coins</div>
+                        <div class="balance-value">1000</div>
+                      </div>
+                      <div class="profit-info balance-item">
+                        <div class="balance-label">Profit Amount</div>
+                        <div class="balance-value">500</div>
+                      </div>
+                      <div class="order-info balance-item">
+                        <div class="balance-label">Order No</div>
+                        <div class="balance-value">12345</div>
+                      </div>
+                    </div>
+                  </div>         
+                </div>
+              </div>
+
+              <div class="php-email-form" *ngIf="page2" >
+                <div class="scrollable">
+                  <div *ngFor="let coin of this.dataProfit.data">
+                    <div class="rectangle" *ngFor="let value of coin.value">
+                      <div class="transaction-date">Profits: <br>
+                        <span>{{value.date}}</span>
+                      </div>
+                      <div class="balance-info">
+                        <div class="total-profit">
+                          {{value.profit.toFixed(6)}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="php-email-form" *ngIf="page3">
+                <div class="button-container">
+                  <button class="button-filter" [class.active]="isTodayFilterActive" (click)="showfilter1()">Today</button>
+                  <button class="button-filter" [class.active]="isMonthlyFilterActive" (click)="showfilter2()">Monthly</button>
+                  <button class="button-filter" [class.active]="isTotalFilterActive" (click)="showfilter3()">Total Profit</button>
+                </div><br>
+                <div class="scrollable">
+                  <div *ngIf="isSuccess">
+                      <div *ngFor="let datas of dataHistory">
+                          <div class="rectangle">
+                              <div class="title-coin">  
+                                  {{datas.key}}
+                              </div>
+                              <div class="balance-info">
+                                  <div class="coin-profit">
+                                      {{datas.profit.toFixed(6)}}
+                                  </div>
+                              </div>
+                          </div>
+                      </div>      
+                  </div>
+                  <div *ngIf="!isSuccess">
+                      <table class="rectangle-error">
+                          <tr class="message-error">
+                              <td>{{errorMessage}}!</td>
+                          </tr>
+                      </table>
+                  </div>
+              </div>
+              
+                <!-- <div class="scrollable">
+                  <div *ngFor="let datas of this.dataHistory.data">
+                    <div class="rectangle">
+                      <div class="title-coin">  
+                        {{datas.symbol}}
+                      </div>
+                      <div class="balance-info">
+                        <div class="coin-profit">
+                          {{datas.profit.toFixed(6)}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>      
+                </div> -->
+              </div>
+            </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+  <app-footer></app-footer>

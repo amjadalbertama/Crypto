@@ -1,0 +1,27 @@
+<app-login #modal></app-login>
+<app-connect-api #connect></app-connect-api>
+<header id="header" [ngClass]="{'home': isHome}" class="header-top">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><a href="index.html">Crypto</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li id="home"><a class="nav-link scrollto" routerLink="/home" href="javascript:void(0);">Home</a></li>
+          <li id="register" *ngIf="!isLoggedIn"><a class="nav-link scrollto" routerLink="/register" href="javascript:void(0);">Register</a></li>
+          <li id="Statement_page" *ngIf="isLoggedIn"><a class="nav-link scrollto" routerLink="/statement" href="javascript:void(0);">Statement Page</a></li>
+          <li id="connect_api" *ngIf="isLoggedIn"><a class="nav-link scrollto" href="javascript:void(0);" (click)="connect.openModal()">Connect API</a></li>
+          <li id="login" *ngIf="!isLoggedIn"><a class="getstarted scrollto" href="javascript:void(0);" (click)="modal.openModal()">Login</a></li>
+          <li id="user" *ngIf="isLoggedIn" class="dropdown">
+           <a href="javascript:void(0);"><i class="fas fa-user icon-user" style="color: #ffffff;"></i> <span class="username">{{auth_name}}</span></a>
+            <ul>
+                <li><a href="javascript:void(0);" routerLink="/setting/profile">Setting</a></li>
+                <li><a href="javascript:void(0);" (click)="logOutUser()">Logout</a></li>
+            </ul>
+          </li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+    </div>
+</header><!-- End Header -->
+

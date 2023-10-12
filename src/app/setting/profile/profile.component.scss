@@ -1,0 +1,13 @@
+.step-item {
+    width: 32%;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .step-item.active {
+    background-color: #47b2e4;
+    color: #fff;
+  }

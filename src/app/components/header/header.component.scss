@@ -1,0 +1,23 @@
+.header-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+  }
+  .header-top:not(.home) {
+    background-color: rgba(40, 58, 90, 0.9);
+  }
+  header.colored {
+    background-color:  rgba(40, 58, 90, 0.9);
+  }
+
+  .icon-user:hover,
+  .icon-user:focus:hover{
+      color: #31a9e1;
+  }
+
+  .icon-user{
+    margin-right: 10px;
+  }

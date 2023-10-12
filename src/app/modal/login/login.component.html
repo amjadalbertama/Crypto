@@ -1,0 +1,37 @@
+<div #myModal class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Login</h5>
+            <a type="button" href="javascript:void(0);" class="close" aria-label="Close" (click)="closeModal()">
+                <i class="fas fa-window-close fa-2x" style="color: #ffffff;"></i>
+            </a>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label"><i class="fas fa-envelope"></i> Email address</label>
+                <input type="email" class="form-control" #email_login aria-describedby="emailHelp">
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label"><i class="fas fa-unlock-alt"></i> Password</label>
+                <input type="password" class="form-control" #password_login>
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="remember-me">
+                <label class="form-check-label" for="remember-me">Remember Me</label>
+              </div>
+              <button type="button" class="btn submit-btn-color" (click)="onSubmit()">Login</button>
+              <a href="#" class="float-end">Forgot Password?</a>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <p>Don't have an account? Register now:</p>
+            <a routerLink="/register" class="btn btn-secondary" (click)="closeModal()">Register</a>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  
+  

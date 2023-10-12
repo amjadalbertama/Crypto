@@ -1,0 +1,58 @@
+<div #connectAPI class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Connect API</h5>
+          <a type="button" href="javascript:void(0);" class="close" aria-label="Close" (click)="closeModal()">
+            <i class="fas fa-window-close fa-2x" style="color: #ffffff;"></i>
+          </a>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="api_key" class="form-label">API Key :</label>
+                  <input type="text" class="form-control" #api_key placeholder="Please enter API key">
+                </div>
+                <div class="mb-3">
+                    <label for="secret_key" class="form-label">Secret Key:</label>
+                    <input type="text" class="form-control" #secret_key placeholder="Please enter Secret Key">
+                  </div>
+            </form>
+            <button type="button" class="btn submit-btn-color" (click)="connecting()">Connect</button>
+            <!-- <hr>  -->
+            <!-- <div class="container">
+                <h4>API Connected</h4>
+                <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Api Key</th>
+                        <th>Secret key</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Data 1</td>
+                        <td>Data 2</td>
+                        <td>Data 3</td>
+                        <td>
+                          <div class="action-btn-container">
+                            <button class="action-btn disconnect"><i class="fas fa-unlink"></i> Disconnect</button>
+                            <button class="action-btn disconnect"><i class="fas fa-link"></i> Connect</button>
+                            <button class="action-btn"><i class="fas fa-trash-alt"></i> Delete</button>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                </table>
+            </div> -->
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"  (click)="closeModal()">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
